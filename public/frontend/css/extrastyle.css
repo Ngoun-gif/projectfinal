@@ -1,0 +1,384 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.icon {
+    color: rgb(0, 138, 250);
+}
+.bg-blue{
+    background-color: rgb(0, 138, 250);
+    color: white;
+}
+
+.carousel {
+    z-index: -1;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://www.hertz.com/content/dam/hertz/global/blog-articles/resources/car-rental-vs-car-sharing/car-keys.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: -160px;
+}
+
+.content {
+    width: 100%;
+    background-color: white;
+    border: solid 1px none;
+    border-radius: 30px 30px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+}
+
+.navbars {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.607);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbars h1 {
+    
+    color: white;
+    margin-top: -150px;
+}
+.carousel-about {
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+    background-image: url(https://wallpapers.com/images/hd/garage-1920-x-1080-picture-b3rlkvrovxsof4tc.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    top: -160px;
+}
+
+.content-about {
+    width: 100%;
+    background-color: white;
+    border: solid 1px none;
+    border-radius: 30px 30px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+}
+
+.navbars-about {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.607);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbars-about h1 {
+    
+    color: white;
+    
+}
+.carousel-service {
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+    background-image: url(https://www.legendautoservices.com/wp-content/uploads/2023/11/Car-wash-al-quoz-best.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    top: -160px;
+}
+.content-service {
+    width: 100%;
+    background-color: white;
+    border: solid 1px none;
+    border-radius: 30px 30px;
+    z-index: 1;
+    position: absolute;
+    top: 330px;
+}
+
+.navbars-service {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.607);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbars-service h1 {
+    
+    color: white;
+    
+}
+.carousel-shop {
+    z-index: -1;
+    width: 100%;
+    height: 350px;
+    background-image: url(https://www.legendautoservices.com/wp-content/uploads/2023/11/Car-wash-al-quoz-best.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    top: -160px;
+}
+.content-shop {
+    width: 100%;
+    background-color: white;
+    border: solid 1px none;
+    border-radius: 30px 30px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+}
+.navbars-shop {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.728);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbars-shop h2 {
+    margin-top: 200px;
+    color: white;
+    
+}
+.booking-shortcut{
+
+    position: absolute;
+    top: 320px;
+    width: 80%;
+    height: 110px;
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.booking-column{
+    width: 27%;
+    height: 60%;
+    border: solid 1px rgba(0, 0, 0, 0.36);
+    border-radius: 8px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(11, 2, 64);
+    font-size: 20px;
+}
+.btn-search{
+    width: 10%;
+    height: 60%;
+    padding: 4px 9px;
+    background-color: rgb(64, 165, 247);
+    color: white;
+    border: solid 1px none;
+    border-radius: 8px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-search:hover {
+    background-color: rgb(0, 138, 250);
+    cursor: pointer;
+}
+
+.cars {
+    z-index: 50;
+    position: absolute;
+    top: 370px;
+    right: 110px;
+    width: 230px;
+    height: 200px;
+}
+
+.nav-top {
+    background-color: transparent;
+}
+
+.text-start {
+    font-size: 250px;
+}
+
+.buttons {
+    padding: 4px 9px;
+    background-color: rgb(64, 165, 247);
+    color: white;
+    border: solid 1px none;
+    border-radius: 9px;
+    margin-right: 13px;
+
+}
+
+.buttons:hover {
+    background-color: rgb(0, 138, 250);
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: ease-in-out 0.3s;
+    z-index: 1000;
+    text-align: center;
+    font-weight: 50;
+    margin-top: 50px;
+    padding-top: 10px;
+    color: white;
+}
+
+.navbar.scrolled {
+
+    background-color: rgb(64, 165, 247);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    color: rgb(3, 1, 33);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: ease-in-out 0.2s;
+    border-bottom: solid 0px;
+    
+   
+}
+
+.nav-links a:hover {
+    color: rgb(243, 177, 79);
+}
+.nav-links span:hover {
+    color: rgb(243, 177, 79);
+}
+.black{
+    color: black;
+}
+
+.main-team{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-team1{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-team2{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p2.JPEG);
+    background-size: cover;
+    background-position: top;
+}
+.card-team3{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-team4{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-team5{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-team6{
+    width: 100%;
+    height: 370px;
+    background-image: url(img/p6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg-main{
+    
+    width: 100%;
+    height: 740px;
+    background-size: auto;
+    position: relative;
+    
+}
+.bg-main img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.bg-black{
+    position: absolute;
+    top: 0;
+    z-index:   1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.783);
+}
+.modal-content{
+    width: 600px;
+    height: 520px;
+    background-color:rgb(0, 138, 250);
+    background-size: cover;
+    background-position: center;
+   
+}
+.modal-dialog{
+    margin-left: 480px;
+}
+.Active{
+    color: rgb(243, 177, 79);
+    border-bottom: solid 3px;
+}
+
