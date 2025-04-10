@@ -1,6 +1,6 @@
 <?php
 
-use phpApp\Http\Controllers\Dashboard\CustomerController;
+use App\Http\Controllers\Dashboard\CustomerController;
 use App\Http\Controllers\Dashboard\productController;
 use App\Http\Controllers\Dashboard\supplierController;
 use App\Http\Controllers\Frontend\HomeFrontendController;
@@ -12,11 +12,12 @@ use App\Http\Controllers\Dashboard\HomeController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Dashboard\BranchController;
 
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Route::controller(HomeFrontendController::class)->group(function() {
+Route::controller(HomeFrontendController::class)->group(function () {
     Route::get('/', 'homeFrontend');
 });
 
@@ -36,15 +37,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/dashboard', 'homeDashboard')->name('dashboard');
     });
 
-    Route::get('/users', [UserController::class, 'userDashboard']);
-    Route::get('/branch', [BranchController::class, 'branchDashboard']);
-    Route::get('/customer', [CustomerController::class, 'customerDashboard']);
-    Route::get('/product_type_1', [productController::class, 'productType1']);
-    Route::get('/product_type_2', [productController::class, 'productType2']);
-    Route::get('/product_type_3', [productController::class, 'productType3']);
-    Route::get('/supplier', [supplierController::class, 'supplier']);
-    Route::get('/create_user', [UserController::class, 'createUserDashboard']);
+    include __DIR__ . '/admin/user.php';
+    include __DIR__ . '/admin/profile.php';
 
+    Route::get('dashboard/branch', [BranchController::class, 'branchDashboard']);
+    Route::get('dashboard/customer', [CustomerController::class, 'customerDashboard']);
+    Route::get('dashboard/product_type_1', [productController::class, 'productType1']);
+    Route::get('dashboard/product_type_2', [productController::class, 'productType2']);
+    Route::get('dashboard/product_type_3', [productController::class, 'productType3']);
+    Route::get('dashboard/supplier', [supplierController::class, 'supplier']);
+    Route::get('/create_user', [UserController::class, 'createUserDashboard']);
 });
 
 
@@ -59,4 +61,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+
+
+
+require __DIR__ . '/auth.php';
